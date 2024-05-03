@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS for additional styling and responsiveness -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home"class="home-container">
+        <div class="content">
+            <h1>Hey There! I'm Sashank Chittella</h1>
+            <h1>I'm a <span id="animated-text"></span></h1>
+        </div>
+        <div class="image-container">
+            <img src="D:\FAREWELL 2k24\sash\IMG_8861_1.JPG" alt="Sashank Chittella">
+        </div>
+    </div>
+  
+    <div id="about" class="container">
+        <h1>About Me</h1>
+        <br><br>
+        <p>Tech Enthusiast, Eager and detail-oriented student with a strong motivation to apply academic knowledge in
+            Engineering. Equipped with excellent communication, teamwork, and problem-solving skills honed through
+            coursework and practical experience. A fast learner, adaptable, and open to embracing new challenges to
+            achieve personal and professional goals. Passionate about leveraging technical skills in software
+            development and design to create innovative solutions that make a difference. Actively seeking opportunities
+            to collaborate on projects that push the boundaries of technology and design.</p>
+
+        <br><br>
+        <h5>Upcoming Intern at Intel</h5>
+    </div>
+
+
+    <div id="resume" class="container">
+        <h1>Resume</h1>
+        <div class="flex-container">
+            <div class="resume-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C++ <img src="https://icons8.com/icon/40669/c%2B%2B" alt=""> (DSA, OOPS), GIT, GitHub, Problem-Solving</li>
+                    <li>HTML, CSS, Javascript</li>
+                    <li>Python, Java (Basic Understanding)</li>
+                    <li>SQL</li>
+                </ul>
+                <h2>Education</h2>
+                <ul>
+                    <li>Integrated M. Tech CSE | Vellore Institute of Technology, Vellore <b>CGPA: 8.50</b>
+                    <li>
+                    <li>XII (BIEAP) | Sri Chaitanya Junior College, Visakhapatnam - <b>Percentage: 94.1% (2018-2020)</b>
+                    </li>
+                    <li>X (SSC) | Sri Chaitanya School, Visakhapatnam <b>CGPA: 10.0 (2016-2018)</b></li>
+                </ul>
+            </div>
+            <div class="resume-section">
+                <h2>Academic Projects</h2>
+                <p><strong>Student Data Hub</strong> - Developed a comprehensive C++ project focusing on input and
+                    output fundamentals, providing a solid understanding of file management systems. <br>Tech stack: C++.
+                </p>
+                <p><strong>Pothole Detection using YOLOv8</strong> - Developed a robust Pothole Detection system for
+                    road infrastructure using Ultralytics YOLOv8. <br> Tech Stack: Roboflow, Google Colab, Machine Learning,
+                    Ultralytics YOLOv8.</p>
+                <p><strong>PandaCoin – WEB3 portal to exchange Sepolia ETH through MetaMask</strong> - Developed and
+                    deployed PandaCoin WEB3, a robust web portal enabling seamless Ethereum blockchain exchange through
+                    the Metamask wallet. <br> Tech Stack: React JS, TailwindCSS, Solidity, Metamask, Hardhat.</p>
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Microsoft Security, Compliance and Fundamentals</li>
+                    <li>SQL (Intermediate)</li>
+                    <li>Problem Solving (Basic)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container">
+        <h1>Contact Me</h1>
+        <p>You can contact me via email, phone, or social media.</p>
+
+        <!-- Contact Form -->
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your message here"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <!-- Social Media Links -->
+        <div class="social-links mt-4">
+            <p>Follow me on:</p>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add some basic JavaScript for navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function () {
+                document.querySelector('.nav-link.active').classList.remove('active');
+                this.classList.add('active');
+            });
+        });
+    </script>
+    <script>
+        const phrases = ["Developer", "Photographer", "Designer"];
+        let currentPhrase = 0;
+        let charIndex = 0;
+        let currentText = '';
+        let isDeleting = false;
+
+        function type() {
+            const target = document.getElementById('animated-text');
+            if (currentPhrase >= phrases.length) currentPhrase = 0;
+            const fullText = phrases[currentPhrase];
+
+            if (isDeleting) {
+                currentText = fullText.substring(0, charIndex--);
+            } else {
+                currentText = fullText.substring(0, charIndex++);
+            }
+
+            target.innerHTML = `<strong>${currentText}</strong>`;
+
+            const typingSpeed = 50;
+            let delay = isDeleting ? typingSpeed / 2 : typingSpeed;
+
+            if (!isDeleting && currentText === fullText) {
+                delay = 2500; // Pause at the end of the phrase
+                isDeleting = true;
+            } else if (isDeleting && currentText === '') {
+                isDeleting = false;
+                currentPhrase++;
+                delay = 500; // Pause before starting next phrase
+            }
+
+            setTimeout(type, delay);
+        }
+
+        // Start the typing effect once the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(type, 1000);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                document.querySelector('.image-container').style.transform = 'translateX(0)';
+            }, 1000); // Delay to ensure the user sees the effect
+        });
+    </script>
+</body>
+
+</html>
